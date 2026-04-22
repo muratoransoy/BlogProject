@@ -2,10 +2,11 @@
 # Override only what differs from theme defaults.
 # Full reference: https://blowfish.page/docs/configuration/#theme-parameters
 
-colorScheme = "blowfish"
+colorScheme = "slate"           # minimalist gray palette
 defaultAppearance = "dark"      # minimalist + dark default
 autoSwitchAppearance = true     # respect system preference
 
+enableA11y = true               # accessibility helpers
 enableSearch = true
 enableCodeCopy = true           # copy button on code blocks
 enableStructuredBreadcrumbs = true

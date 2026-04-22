@@ -15,9 +15,14 @@ contentDir = "content/en"
 [params.author]
   name = "Murat Oransoy"
   email = "muratoransoy838@gmail.com"
+  image = "img/avatar.svg"
+  imageQuality = 96
   headline = "Software Engineer"
   bio = "I build things with code. Mostly Go, sometimes everything else."
   links = [
     { email = "mailto:muratoransoy838@gmail.com" },
     { github = "https://github.com/muratoransoy" },
+    # TODO: fill in when accounts are confirmed
+    # { linkedin = "https://www.linkedin.com/in/USERNAME" },
+    # { x-twitter = "https://x.com/USERNAME" },
   ]
