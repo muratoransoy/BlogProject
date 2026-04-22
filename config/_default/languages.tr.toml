@@ -1,0 +1,24 @@
+disabled = false
+locale = "tr"
+languageCode = "tr-TR"
+label = "Türkçe"
+weight = 2
+title = "Murat Oransoy"
+contentDir = "content/tr"
+
+[params]
+  displayName = "TR"
+  isoCode = "tr"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Murat Oransoy'un kişisel blog ve portfolio sitesi — yazılım mühendisi."
+
+[params.author]
+  name = "Murat Oransoy"
+  email = "muratoransoy838@gmail.com"
+  headline = "Yazılım Mühendisi"
+  bio = "Kodla bir şeyler inşa ediyorum. Ağırlıklı Go, bazen de her şey."
+  links = [
+    { email = "mailto:muratoransoy838@gmail.com" },
+    { github = "https://github.com/muratoransoy" },
+  ]

@@ -1,0 +1,35 @@
+# Hugo build output
+public/
+resources/
+.hugo_build.lock
+
+# Hugo cache
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local env / secrets
+.env
+.env.local
+*.local
+
+# Node (in case we add JS tooling later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+*.log
+
+# Claude Code local config (keep project-shared in repo if any)
+.claude/settings.local.json

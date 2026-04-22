@@ -1,0 +1,23 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "Murat Oransoy"
+contentDir = "content/en"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Personal blog and portfolio of Murat Oransoy — software engineer."
+
+[params.author]
+  name = "Murat Oransoy"
+  email = "muratoransoy838@gmail.com"
+  headline = "Software Engineer"
+  bio = "I build things with code. Mostly Go, sometimes everything else."
+  links = [
+    { email = "mailto:muratoransoy838@gmail.com" },
+    { github = "https://github.com/muratoransoy" },
+  ]

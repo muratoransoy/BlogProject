@@ -1,0 +1,24 @@
+# -- Site Configuration --
+# Blowfish docs: https://blowfish.page/docs/getting-started/
+
+theme = "blowfish"
+
+# baseURL will be set when domain is purchased (Sprint 6).
+# For local dev and Cloudflare Pages preview, leaving as a placeholder is fine.
+baseURL = "https://blog.example.com/"
+
+defaultContentLanguage = "en"
+
+enableRobotsTXT = true
+enableEmoji = true
+summaryLength = 0
+
+buildDrafts = false
+buildFuture = false
+
+# Pretty URLs for sitemap and RSS handled by theme defaults.
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
