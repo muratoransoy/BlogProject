@@ -2,6 +2,7 @@
 title: "Hello, World"
 date: 2026-04-22
 draft: false
+translationKey: "post-hello-world"
 summary: "First post on the new blog. Stack, motivation, and what's coming."
 tags: ["meta", "blog"]
 categories: ["misc"]

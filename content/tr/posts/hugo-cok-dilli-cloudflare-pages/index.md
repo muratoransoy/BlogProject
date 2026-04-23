@@ -2,6 +2,7 @@
 title: "Cloudflare Pages üzerinde çok dilli bir Hugo blogu kurmak"
 date: 2026-04-22T18:00:00+03:00
 draft: false
+translationKey: "post-hugo-multilingual-cloudflare-pages"
 summary: "İki dilli (EN + TR) bir Hugo + Blowfish blogunu tek kuruş harcamadan Cloudflare Pages'e nasıl yayınladım — ve bir saatimi yiyen tek i18n tuzağı."
 tags: ["hugo", "i18n", "cloudflare", "static-site", "blowfish"]
 categories: ["web"]

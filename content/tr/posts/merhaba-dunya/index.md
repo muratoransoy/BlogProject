@@ -2,6 +2,7 @@
 title: "Merhaba, Dünya"
 date: 2026-04-22
 draft: false
+translationKey: "post-hello-world"
 summary: "Yeni blogun ilk yazısı. Stack, motivasyon ve sırada ne var."
 tags: ["meta", "blog"]
 categories: ["genel"]

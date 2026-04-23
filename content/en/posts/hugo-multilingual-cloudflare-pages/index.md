@@ -2,6 +2,7 @@
 title: "Setting up a multilingual Hugo blog on Cloudflare Pages"
 date: 2026-04-22T18:00:00+03:00
 draft: false
+translationKey: "post-hugo-multilingual-cloudflare-pages"
 summary: "How I shipped a bilingual (EN + TR) Hugo + Blowfish blog to Cloudflare Pages without spending a cent — and the one i18n gotcha that ate an hour."
 tags: ["hugo", "i18n", "cloudflare", "static-site", "blowfish"]
 categories: ["web"]
