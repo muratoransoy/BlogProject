@@ -51,6 +51,7 @@ fingerprintAlgorithm = "sha512"
   showTags = true
   showWordCount = true
   sharingLinks = ["linkedin", "twitter", "reddit", "email"]
+  showComments = true              # giscus via layouts/partials/comments.html
 
 [list]
   showHero = false

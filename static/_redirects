@@ -1,0 +1,8 @@
+# Cloudflare Pages redirects — applied at edge.
+# Reference: https://developers.cloudflare.com/pages/configuration/redirects/
+#
+# When the custom domain is connected (Sprint 6), uncomment and adjust:
+#
+# https://www.muratoransoy.dev/*  https://muratoransoy.dev/:splat  301!
+#
+# Until then, no redirects are needed.

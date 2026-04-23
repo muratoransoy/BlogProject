@@ -1,0 +1,32 @@
+{{/*
+  giscus comments — uses GitHub Discussions.
+
+  Setup checklist (one-time, see docs/02-deploy-guide.md):
+    1. Make the GitHub repo public.
+    2. Enable Discussions on the repo (Settings → Features → Discussions).
+    3. Install the giscus app: https://github.com/apps/giscus
+    4. Visit https://giscus.app/ and select the repo to obtain:
+         - data-repo-id
+         - data-category-id
+    5. Replace the TODO placeholders below.
+
+  Once configured, set `showComments = true` per-post (or globally in
+  config/_default/params.toml under [article]).
+*/}}
+<script
+  src="https://giscus.app/client.js"
+  data-repo="muratoransoy/blog"
+  data-repo-id="TODO_REPO_ID"
+  data-category="Comments"
+  data-category-id="TODO_CATEGORY_ID"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="preferred_color_scheme"
+  data-lang="{{ site.Language.Lang | default "en" }}"
+  data-loading="lazy"
+  crossorigin="anonymous"
+  async>
+</script>
