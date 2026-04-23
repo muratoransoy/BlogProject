@@ -100,3 +100,43 @@ Two workflows live in `.github/workflows/`:
 | `links.yml` | every push & PR + weekly cron | Builds, then runs `lychee` against the output to catch broken links |
 
 Cloudflare Pages does its own build separately (it's the source of truth for deploys); the GitHub workflows are pre-flight checks.
+
+---
+
+## Common errors
+
+### `Could not detect a directory containing static files`
+
+Full error (from CF Pages build log):
+
+```text
+Executing user deploy command: npx wrangler deploy
+✘ [ERROR] Could not detect a directory containing static files
+   (e.g. html, css and js) for the project
+```
+
+**Cause.** The Pages project was created in **Workers** mode (or with no framework preset), so Cloudflare runs `npx wrangler deploy` instead of `hugo`. No Hugo build ever happens, so `public/` doesn't exist.
+
+**Fix.** In the Pages dashboard → project → **Settings → Builds & deployments → Build configurations**, set:
+
+| Field | Value |
+|---|---|
+| Framework preset | **Hugo** |
+| Build command | `hugo --gc --minify` |
+| Build output directory | `public` |
+| Root directory | `/` (leave empty) |
+| Environment variable | `HUGO_VERSION` = `0.160.1` |
+
+Save, then **Deployments** → **Retry deployment** on the failed build.
+
+### Theme files missing in build (404 on CSS/JS)
+
+**Cause.** Cloudflare Pages didn't fetch the `themes/blowfish` git submodule.
+
+**Fix.** Pages fetches submodules by default since 2023 — but if the build still misses them, set the env var `GIT_SUBMODULE_STRATEGY=recursive` in the build configuration.
+
+### `hreflang` not appearing on a new bilingual post
+
+**Cause.** Both language versions need the same `translationKey` in frontmatter, otherwise Hugo can't pair them and `.AllTranslations` stays empty.
+
+**Fix.** Add the same `translationKey: "post-<slug>"` line to both EN and TR frontmatter, then rebuild.
