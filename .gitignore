@@ -3,6 +3,12 @@ public/
 resources/
 .hugo_build.lock
 
+# Hugo binary downloaded by scripts/cf-build.sh in CI
+bin/
+
+# Wrangler local state
+.wrangler/
+
 # Hugo cache
 .cache/
 

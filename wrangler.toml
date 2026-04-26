@@ -1,0 +1,34 @@
+# Cloudflare Workers Static Assets configuration.
+#
+# Why this file exists:
+#   When the Cloudflare project is created in "Workers" mode (the unified
+#   Workers + Pages experience), the deploy runs `npx wrangler deploy`.
+#   Without a wrangler.toml the deploy fails with:
+#     "Could not detect a directory containing static files"
+#   This file tells wrangler how to build and what to serve.
+#
+# Reference:
+#   https://developers.cloudflare.com/workers/static-assets/
+#   https://developers.cloudflare.com/workers/wrangler/configuration/
+
+name = "blog"
+compatibility_date = "2026-04-22"
+
+# Build Hugo before deploying. Wrangler runs this command, then uploads
+# the directory configured under [assets].
+#
+# The script:
+#   1. Uses `hugo` from PATH if present (CF auto-installs when HUGO_VERSION
+#      env var is set in the project's build settings).
+#   2. Otherwise downloads the pinned Hugo Extended release into ./bin.
+# This makes deploys self-contained and removes the dashboard env-var
+# requirement.
+[build]
+command = "sh ./scripts/cf-build.sh"
+
+# Serve the Hugo output directory as static assets.
+# `not_found_handling = "404-page"` makes wrangler look for /404.html on
+# unmatched routes — Hugo + Blowfish generate this automatically.
+[assets]
+directory = "./public"
+not_found_handling = "404-page"

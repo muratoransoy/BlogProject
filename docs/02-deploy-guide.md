@@ -115,9 +115,13 @@ Executing user deploy command: npx wrangler deploy
    (e.g. html, css and js) for the project
 ```
 
-**Cause.** The Pages project was created in **Workers** mode (or with no framework preset), so Cloudflare runs `npx wrangler deploy` instead of `hugo`. No Hugo build ever happens, so `public/` doesn't exist.
+**Cause.** The Cloudflare project was created in **Workers** mode (the new unified Workers + Pages experience), so the deploy runs `npx wrangler deploy` instead of the classic Hugo build. No Hugo build happens, so `public/` doesn't exist.
 
-**Fix.** In the Pages dashboard → project → **Settings → Builds & deployments → Build configurations**, set:
+**Fix (recommended — already in this repo).** A `wrangler.toml` and `scripts/cf-build.sh` are checked in. Wrangler reads the toml, runs the build script (which installs Hugo if it's missing), and serves `public/` as static assets. **No dashboard configuration is required** — just push to main and the deploy picks it up.
+
+If `HUGO_VERSION` is set as an env var in the project's build settings, Cloudflare's auto-install kicks in and the script's fallback download is skipped (faster). To set it: project → **Settings → Variables and Secrets → Add** → `HUGO_VERSION` = `0.160.1`.
+
+**Alternative fix (classic Pages project).** If you'd rather use the classic Pages build pipeline, in the dashboard → project → **Settings → Builds & deployments → Build configurations**, set:
 
 | Field | Value |
 |---|---|
