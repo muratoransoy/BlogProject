@@ -17,12 +17,10 @@ compatibility_date = "2026-04-22"
 # Build Hugo before deploying. Wrangler runs this command, then uploads
 # the directory configured under [assets].
 #
-# The script:
-#   1. Uses `hugo` from PATH if present (CF auto-installs when HUGO_VERSION
-#      env var is set in the project's build settings).
-#   2. Otherwise downloads the pinned Hugo Extended release into ./bin.
-# This makes deploys self-contained and removes the dashboard env-var
-# requirement.
+# The script always downloads a pinned Hugo Extended release into ./bin
+# and uses it. CF Workers Builds ships an older Hugo (v0.147.x) which is
+# incompatible with Blowfish (needs .Site.Language.Locale, Hugo ≥ 0.158),
+# so we ignore whatever is on PATH and pin the version explicitly.
 [build]
 command = "sh ./scripts/cf-build.sh"
 
