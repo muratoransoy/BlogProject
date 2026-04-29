@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Who I am, what I work on, and how to reach me."
+description: "Who I am, what I am building, and what you can expect here."
 draft: false
 showReadingTime: false
 showDate: false
@@ -13,55 +13,36 @@ showBreadcrumbs: false
 sharingLinks: false
 ---
 
-Hi, I'm **Murat Oransoy** — a software engineer based in Türkiye.
+Hi, I am **Murat Oransoy**. I work on backend development, Go, Linux, and cloud tooling, with a focus on systems that are simple enough to understand and solid enough to run.
 
-I like building backend systems, command-line tools, and small useful things on the web. I write Go for fun and at work, and dabble in just about everything else when a problem calls for it.
+To me, good software is not only code that works. It is readable, observable, maintainable, and honest about its tradeoffs. This blog is where I turn that learning process into polished but practical notes.
 
----
+## What I write about
 
-## What I'm doing right now
-
-- Building this blog and writing weekly about engineering topics I find interesting.
-- Sharpening my Go fundamentals and exploring distributed systems.
-- Learning in public — see [Now](/now/) for the latest.
+- Backend development with Go, service design, and command-line tools.
+- Cloudflare Workers, Pages, CDN behavior, caching, and edge deployment notes.
+- Hugo, GitHub Actions, and small developer workflows that save time.
+- Mistakes, decisions, and solutions I want to remember.
 
 ## How I work
 
-I value:
+- **Ship the working version first:** start small, publish, measure, and improve.
+- **Prefer clear technology:** architecture should earn its complexity.
+- **Learn from source code:** docs matter, but working examples make ideas stick.
 
-- **Shipping over polishing** — done is better than perfect, but perfect is worth a second pass.
-- **Reading code over writing code** — most of engineering is understanding what's already there.
-- **Boring tech** — proven tools beat shiny ones for production.
+## Tools I use
 
-## Tech I work with
+**Languages:** Go, JavaScript / TypeScript, Python, Bash, SQL.
 
-**Languages**
-Go (primary), JavaScript / TypeScript, Python, Bash, SQL.
+**Backend & infrastructure:** PostgreSQL, Redis, Docker, Linux, REST, gRPC, Cloudflare.
 
-**Backend & Infra**
-PostgreSQL, Redis, Docker, Linux, gRPC, REST.
+**Web:** HTML, CSS, Hugo, some React.
 
-**Frontend (when I have to)**
-HTML, CSS, a little React.
+**Daily tools:** VS Code, Git, GitHub Actions, Wrangler, and a terminal-first workflow.
 
-**Tools**
-VS Code, Git, GitHub Actions, Cloudflare, Hugo.
+## Contact
 
-> The full list lives on the [Uses](/uses/) page — that's the day-to-day setup.
+- Email: [muratoransoy838@gmail.com](mailto:muratoransoy838@gmail.com)
+- GitHub: [@muratoransoy](https://github.com/muratoransoy)
 
-## Getting in touch
-
-The fastest ways to reach me:
-
-- Email — [muratoransoy838@gmail.com](mailto:muratoransoy838@gmail.com)
-- GitHub — [@muratoransoy](https://github.com/muratoransoy)
-
-For longer conversations or work inquiries, email is best.
-
-## CV
-
-A printable CV is on the way — for now, this page is the canonical version.
-
-<!-- TODO: When CV is ready, drop the file at static/cv.pdf and replace this section with a download link, e.g.:
-[Download CV (PDF)](/cv.pdf)
--->
+Email is the best place for longer conversations, work inquiries, or technical feedback.

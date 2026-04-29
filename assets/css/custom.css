@@ -1,17 +1,15 @@
 /* Project-level overrides for Blowfish.
    Loaded automatically by the theme as assets/css/custom.css. */
 
-/* Slightly tighter heading letter-spacing for a sharper minimalist feel. */
 .prose h1,
 .prose h2,
 .prose h3,
 article h1,
 article h2,
 article h3 {
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
-/* A touch more breathing room in long-form prose. */
 .prose p,
 .prose li {
   line-height: 1.75;
@@ -22,4 +20,199 @@ article h3 {
   outline: 2px solid currentColor;
   outline-offset: 2px;
   border-radius: 2px;
+}
+
+.home-shell {
+  width: min(1120px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 72px) 0 64px;
+}
+
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: stretch;
+  min-height: 58vh;
+}
+
+.home-hero__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-kicker {
+  margin: 0 0 16px;
+  color: rgb(248 113 113);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-hero h1 {
+  max-width: 880px;
+  margin: 0;
+  font-size: clamp(2.7rem, 7vw, 6.4rem);
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.home-lede {
+  max-width: 720px;
+  margin: 28px 0 0;
+  color: rgb(203 213 225);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.65;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border: 1px solid rgb(71 85 105);
+  border-radius: 8px;
+  color: rgb(241 245 249);
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.home-button:hover {
+  transform: translateY(-1px);
+  border-color: rgb(248 113 113);
+  text-decoration: none;
+}
+
+.home-button--primary {
+  border-color: rgb(248 113 113);
+  background: rgb(248 113 113);
+  color: rgb(15 23 42);
+}
+
+.home-panel {
+  align-self: center;
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+  border: 1px solid rgb(51 65 85);
+  border-radius: 8px;
+  background: rgb(15 23 42 / 0.72);
+  box-shadow: 0 24px 80px rgb(0 0 0 / 0.26);
+}
+
+.home-panel div {
+  padding: 16px;
+  border-radius: 8px;
+  background: rgb(30 41 59 / 0.78);
+}
+
+.home-panel span,
+.home-section__header p,
+.home-card time {
+  display: block;
+  margin: 0 0 6px;
+  color: rgb(148 163 184);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-panel strong {
+  color: rgb(248 250 252);
+  font-size: 1rem;
+}
+
+.home-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 36px 0;
+}
+
+.home-strip span {
+  padding: 8px 12px;
+  border: 1px solid rgb(51 65 85);
+  border-radius: 999px;
+  color: rgb(226 232 240);
+  background: rgb(15 23 42 / 0.6);
+  font-size: 0.9rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.home-section {
+  padding-top: 24px;
+  border-top: 1px solid rgb(51 65 85);
+}
+
+.home-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.home-section__header a {
+  color: rgb(248 113 113);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.home-posts {
+  display: grid;
+  gap: 14px;
+}
+
+.home-card {
+  padding: 18px;
+  border: 1px solid rgb(51 65 85);
+  border-radius: 8px;
+  background: rgb(15 23 42 / 0.58);
+}
+
+.home-card h2 {
+  margin: 0;
+  font-size: clamp(1.18rem, 2vw, 1.45rem);
+  line-height: 1.25;
+}
+
+.home-card h2 a {
+  color: rgb(248 250 252);
+  text-decoration: none;
+}
+
+.home-card p,
+.home-section--about p {
+  margin: 10px 0 0;
+  color: rgb(203 213 225);
+  line-height: 1.7;
+}
+
+@media (max-width: 840px) {
+  .home-hero,
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero {
+    min-height: auto;
+  }
 }

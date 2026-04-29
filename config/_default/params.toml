@@ -2,8 +2,8 @@
 # Override only what differs from theme defaults.
 # Full reference: https://blowfish.page/docs/configuration/#theme-parameters
 
-colorScheme = "slate"           # minimalist gray palette
-defaultAppearance = "dark"      # minimalist + dark default
+colorScheme = "fire"            # warmer, more distinctive than the default slate
+defaultAppearance = "dark"
 autoSwitchAppearance = true     # respect system preference
 
 enableA11y = true               # accessibility helpers
@@ -29,12 +29,12 @@ fingerprintAlgorithm = "sha512"
   showScrollToTop = true
 
 [homepage]
-  layout = "profile"            # dev portfolio focused landing
+  layout = "custom"
   showRecent = true
   showRecentItems = 5
   showMoreLink = true
   showMoreLinkDest = "/posts/"
-  cardView = false
+  cardView = true
 
 [article]
   showDate = true

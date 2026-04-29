@@ -1,33 +1,34 @@
 ---
-title: "muratoransoy.dev (this blog)"
+title: "BlogProject"
 date: 2026-04-22
 draft: false
-summary: "The site you're reading. Hugo + Blowfish, deployed to Cloudflare Pages, written in two languages."
+summary: "A bilingual developer blog published with Hugo, Blowfish, and Cloudflare Workers Static Assets."
 tags: ["hugo", "go", "cloudflare", "open-source"]
 categories: ["web"]
-externalUrl: "https://github.com/muratoransoy/blog"
+externalUrl: "https://github.com/muratoransoy/BlogProject"
 showReadingTime: false
 showAuthor: false
 ---
 
-The very site you're reading.
+This site is more than a blog. It is a small product where I learn and improve my own publishing workflow.
 
-## Why I built it
+## What it solves
 
-I wanted a small, fast, fully-owned home for the things I learn — without a CMS, without ads, without lock-in. Static files served from a CDN, Markdown in version control, content I control.
+Instead of losing technical notes in social feeds, it gives me a fast, owned, searchable, source-controlled place for them.
 
 ## Stack
 
-- **Hugo Extended** for the static site generation.
-- **Blowfish** as a starting theme, with a slate color scheme and a few CSS tweaks.
-- **Cloudflare Pages** for hosting (free tier, global CDN).
-- **GitHub Actions** for build verification and broken-link checking.
-- **giscus** for comments (GitHub Discussions under the hood).
+- **Hugo Extended** for static site generation.
+- **Blowfish** with a custom homepage and project CSS.
+- **Cloudflare Workers Static Assets** for global delivery.
+- **GitHub Actions** for build verification.
+- **giscus** integration prepared for comments.
 
-## What I learned
+## Recent improvements
 
-- Hugo's i18n model and how `contentDir` per language keeps URLs clean.
-- Cloudflare Pages' build pipeline and the value of `_headers` / `_redirects`.
-- That writing weekly is a discipline, not a sprint.
+- Turkish is now the default language.
+- The live Worker URL is configured as `baseURL`.
+- The homepage now has a custom hero, topic strip, and latest-posts section.
+- Placeholder pages were replaced with more complete content.
 
-The source is on [GitHub](https://github.com/muratoransoy/blog).
+Source: [github.com/muratoransoy/BlogProject](https://github.com/muratoransoy/BlogProject)

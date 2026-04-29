@@ -106,4 +106,4 @@ Sıfırdan başlasam değiştireceğim birkaç şey:
 
 Site ayağa kalktığına göre, hedef haftada bir yazı — somut, teknik ve gerçekten bitirebilecek kadar kısa.
 
-Bu blogun kaynak kodu [GitHub](https://github.com/muratoransoy/blog)'da. Bozuk bir şey görürsen issue aç.
+Bu blogun kaynak kodu [GitHub](https://github.com/muratoransoy/BlogProject)'te. Bozuk bir şey görürsen issue aç.

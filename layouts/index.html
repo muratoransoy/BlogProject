@@ -1,0 +1,87 @@
+{{ define "main" }}
+{{ $isTR := eq site.Language.Lang "tr" }}
+{{ $postsPage := site.GetPage "section" "posts" }}
+{{ $projectsPage := site.GetPage "section" "projects" }}
+{{ $aboutPage := site.GetPage "page" "about" }}
+{{ $posts := first 3 (where site.RegularPages "Section" "posts") }}
+
+<main class="home-shell">
+  <section class="home-hero">
+    <div class="home-hero__copy">
+      <p class="home-kicker">{{ if $isTR }}Backend, Go ve Cloudflare notları{{ else }}Backend, Go, and Cloudflare notes{{ end }}</p>
+      <h1>{{ if $isTR }}Sade görünen ama üretime yakın yazılım notları.{{ else }}Software notes that stay close to production.{{ end }}</h1>
+      <p class="home-lede">
+        {{ if $isTR }}
+          Ben Murat Oransoy. Go, backend sistemleri, geliştirici araçları ve Cloudflare üzerinde öğrendiklerimi burada açık, uygulanabilir ve kaynak koduyla birlikte yazıyorum.
+        {{ else }}
+          I am Murat Oransoy. I write about Go, backend systems, developer tooling, and Cloudflare with practical notes, tradeoffs, and source code.
+        {{ end }}
+      </p>
+      <div class="home-actions">
+        {{ with $postsPage }}<a class="home-button home-button--primary" href="{{ .RelPermalink }}">{{ if $isTR }}Yazıları oku{{ else }}Read posts{{ end }}</a>{{ end }}
+        {{ with $projectsPage }}<a class="home-button" href="{{ .RelPermalink }}">{{ if $isTR }}Projeleri gör{{ else }}View projects{{ end }}</a>{{ end }}
+      </div>
+    </div>
+
+    <aside class="home-panel" aria-label="{{ if $isTR }}Odak alanları{{ else }}Focus areas{{ end }}">
+      <div>
+        <span>{{ if $isTR }}Odak{{ else }}Focus{{ end }}</span>
+        <strong>Go, Linux, Cloudflare</strong>
+      </div>
+      <div>
+        <span>{{ if $isTR }}Yazı tarzı{{ else }}Writing style{{ end }}</span>
+        <strong>{{ if $isTR }}Kısa, net, uygulanabilir{{ else }}Short, clear, practical{{ end }}</strong>
+      </div>
+      <div>
+        <span>{{ if $isTR }}Amaç{{ else }}Goal{{ end }}</span>
+        <strong>{{ if $isTR }}Öğrenirken inşa etmek{{ else }}Build while learning{{ end }}</strong>
+      </div>
+    </aside>
+  </section>
+
+  <section class="home-strip" aria-label="{{ if $isTR }}Öne çıkan konular{{ else }}Featured topics{{ end }}">
+    <span>Go</span>
+    <span>Backend</span>
+    <span>Cloudflare Workers</span>
+    <span>Hugo</span>
+    <span>Dev tools</span>
+  </section>
+
+  <section class="home-grid">
+    <div class="home-section">
+      <div class="home-section__header">
+        <p>{{ if $isTR }}Son yazılar{{ else }}Latest posts{{ end }}</p>
+        {{ with $postsPage }}<a href="{{ .RelPermalink }}">{{ if $isTR }}Tüm yazılar{{ else }}All posts{{ end }}</a>{{ end }}
+      </div>
+      <div class="home-posts">
+        {{ range $posts }}
+          <article class="home-card">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            {{ with .Summary }}<p>{{ . | plainify }}</p>{{ end }}
+          </article>
+        {{ else }}
+          <article class="home-card">
+            <h2>{{ if $isTR }}İlk yazı hazırlanıyor{{ else }}First post is on the way{{ end }}</h2>
+            <p>{{ if $isTR }}Yakında burada daha dolu teknik notlar olacak.{{ else }}More technical notes will live here soon.{{ end }}</p>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+
+    <aside class="home-section home-section--about">
+      <div class="home-section__header">
+        <p>{{ if $isTR }}Kısa profil{{ else }}Quick profile{{ end }}</p>
+        {{ with $aboutPage }}<a href="{{ .RelPermalink }}">{{ if $isTR }}Hakkımda{{ else }}About{{ end }}</a>{{ end }}
+      </div>
+      <p>
+        {{ if $isTR }}
+          Backend tarafında güvenilir, okunabilir ve sürdürülebilir sistemler kurmaya odaklanıyorum. Bu blog, öğrendiklerimi düzenli olarak dışarıya taşıdığım çalışma alanım.
+        {{ else }}
+          I focus on reliable, readable, and maintainable backend systems. This blog is the workspace where I publish what I learn along the way.
+        {{ end }}
+      </p>
+    </aside>
+  </section>
+</main>
+{{ end }}

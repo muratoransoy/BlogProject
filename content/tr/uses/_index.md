@@ -1,6 +1,6 @@
 ---
 title: "Kullandıklarım"
-description: "Her gün kullandığım donanım, yazılım ve araçlar."
+description: "Günlük geliştirme akışımda kullandığım donanım, yazılım ve araçlar."
 draft: false
 showReadingTime: false
 showAuthor: false
@@ -12,55 +12,38 @@ showBreadcrumbs: false
 sharingLinks: false
 ---
 
-Her gün uzandığım araçların bir anlık görüntüsü. [uses.tech](https://uses.tech/) esinlemesiyle.
+Her gün kullandığım araçların kısa bir dökümü. Liste yaşayan bir doküman; iş akışım değiştikçe güncellerim.
 
-> Son güncelleme: 2026-04-22
+> Son güncelleme: **2026-04-29**
 
-## Donanım
+## Makine ve ortam
 
-- **Ana makine** — Windows 11 Pro, Intel + 16+ GB RAM
-- **Klavye** — _TODO: marka/dizilim_
-- **Monitör** — _TODO_
-- **Ses** — _TODO_
+- **OS:** Windows 11 Pro
+- **Terminal:** Windows Terminal
+- **Shell:** PowerShell ve Git Bash
+- **Editör:** VS Code
 
-## OS & Shell
+## Diller ve toolchain
 
-- **OS** — Windows 11 Pro
-- **Shell** — Bash (Git for Windows) ve PowerShell, işe göre
-- **Terminal** — Windows Terminal
+- **Go:** backend servisleri, CLI araçları ve öğrenme projeleri için ana dilim.
+- **JavaScript / TypeScript:** web tarafı ve otomasyon gerektiğinde.
+- **Python:** küçük scriptler, veri dönüştürme ve hızlı denemeler için.
+- **SQL:** PostgreSQL ağırlıklı ilişkisel veri modelleme.
 
-## Editör
+## Backend ve altyapı
 
-- **VS Code** ana üs.
-  - Tema: _TODO_
-  - Font: JetBrains Mono / Fira Code
-  - Anahtar eklentiler: GitLens, ESLint, Prettier, Go, Hugo Language and Syntax Support
+- **PostgreSQL:** gerçek veri modeli gerektiğinde ilk tercihim.
+- **Redis:** cache, queue benzeri akışlar ve hızlı prototipler için.
+- **Docker:** tekrarlanabilir local geliştirme ortamları için.
+- **Cloudflare:** Pages, Workers, DNS, cache ve analytics tarafında.
 
-## Diller & Toolchain'ler
+## Web ve yayın
 
-- **Go** (şu anki versiyon: 1.24)
-- **Node.js** JS/TS kaçınılmaz olduğunda
-- **Python** script'ler için
-- **Hugo Extended** bu site için
+- **Hugo:** bu blogun statik site altyapısı.
+- **Blowfish:** başlangıç teması; özel ana sayfa ve CSS ile kişiselleştirildi.
+- **GitHub Actions:** build doğrulama ve link kontrolü için.
+- **Wrangler:** Cloudflare deploy akışı için.
 
-## Günlük Araçlar
+## Günlük prensip
 
-- **Git** + **GitHub** geçici olmaması gereken her şey için
-- **GitHub Actions** CI için
-- **Cloudflare** (Pages, DNS, Analytics) web tarafı için
-- **Docker** tekrarlanabilir local stack'ler için
-- **PostgreSQL** gerçek veritabanı gerektiğinde
-
-## Tarayıcı
-
-- Birincil: _TODO_
-- Eklentiler: uBlock Origin, Bitwarden
-
-## Not Tutma & Verimlilik
-
-- _TODO: Obsidian / Notion / sade markdown?_
-- _TODO: görev yöneticisi_
-
----
-
-Bu sayfa yaşayan bir dokümandır — bir şey değiştiğinde güncellenir.
+Araç seçerken “popüler mi?” sorusundan önce şuna bakıyorum: hızlı başlatıyor mu, anlaşılır kalıyor mu, sorun çıktığında debug edebiliyor muyum?

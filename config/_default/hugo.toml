@@ -5,9 +5,10 @@ theme = "blowfish"
 
 # baseURL will be set when domain is purchased (Sprint 6).
 # For local dev and Cloudflare Pages preview, leaving as a placeholder is fine.
-baseURL = "https://blog.example.com/"
+baseURL = "https://blogproject.muratoransoy838.workers.dev/"
 
-defaultContentLanguage = "en"
+defaultContentLanguage = "tr"
+defaultContentLanguageInSubdir = false
 
 enableRobotsTXT = true
 enableEmoji = true

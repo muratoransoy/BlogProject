@@ -1,6 +1,6 @@
 ---
 title: "Now"
-description: "What I'm focused on right now."
+description: "What I am focused on, learning, and planning to publish next."
 draft: false
 showReadingTime: false
 showAuthor: false
@@ -12,27 +12,24 @@ showBreadcrumbs: false
 sharingLinks: false
 ---
 
-> Last updated: **2026-04-22** — from Türkiye
+> Last updated: **2026-04-29** — from Türkiye
 
-## Working on
+## What I am working on
 
-- Building this blog: shipping the first iteration, then iterating in public.
-- Writing a new technical post every week.
-- Sharpening my Go fundamentals — concurrency, idiomatic patterns, the standard library.
+- Turning this blog into a stronger developer journal and portfolio.
+- Sharpening my Go fundamentals: concurrency, the standard library, tests, and small service design.
+- Building fast, cheap, maintainable deployment workflows on Cloudflare Workers and Pages.
 
-## Learning
+## What I am learning
 
-- **Distributed systems** — slowly working through the basics: consistency, replication, consensus.
-- **Cloudflare** stack — Pages, R2, Workers — to see how far I can push the free tier.
+- Edge deployment: cache behavior, headers, build output, and canonical URL hygiene.
+- Multilingual Hugo sites: content directories, menus, RSS, and sitemap structure.
+- Writing discipline: turning short notes into useful technical posts.
 
-## Reading
+## Upcoming posts
 
-- _TODO: current book / paper_
+- Settings I check when publishing a static site on Cloudflare Workers.
+- Structuring a small CLI project in Go.
+- Customizing a Hugo blog so it does not feel like a theme demo.
 
-## Listening / watching
-
-- _TODO_
-
----
-
-This is a [Now page](https://nownownow.com/about), in the spirit of Derek Sivers. It changes when my focus changes.
+This page changes as my focus changes.

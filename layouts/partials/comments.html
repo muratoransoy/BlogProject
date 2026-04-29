@@ -1,24 +1,23 @@
 {{/*
-  giscus comments — uses GitHub Discussions.
+  giscus comments. Configure these values in config/_default/params.toml:
 
-  Setup checklist (one-time, see docs/02-deploy-guide.md):
-    1. Make the GitHub repo public.
-    2. Enable Discussions on the repo (Settings → Features → Discussions).
-    3. Install the giscus app: https://github.com/apps/giscus
-    4. Visit https://giscus.app/ and select the repo to obtain:
-         - data-repo-id
-         - data-category-id
-    5. Replace the TODO placeholders below.
+  [giscus]
+    repo = "muratoransoy/BlogProject"
+    repoId = "..."
+    category = "Comments"
+    categoryId = "..."
 
-  Once configured, set `showComments = true` per-post (or globally in
-  config/_default/params.toml under [article]).
+  The script is intentionally hidden until real IDs are present, so production
+  pages do not load a broken comments widget.
 */}}
+{{ with site.Params.giscus }}
+{{ if and .repo .repoId .category .categoryId }}
 <script
   src="https://giscus.app/client.js"
-  data-repo="muratoransoy/blog"
-  data-repo-id="TODO_REPO_ID"
-  data-category="Comments"
-  data-category-id="TODO_CATEGORY_ID"
+  data-repo="{{ .repo }}"
+  data-repo-id="{{ .repoId }}"
+  data-category="{{ .category }}"
+  data-category-id="{{ .categoryId }}"
   data-mapping="pathname"
   data-strict="0"
   data-reactions-enabled="1"
@@ -30,3 +29,5 @@
   crossorigin="anonymous"
   async>
 </script>
+{{ end }}
+{{ end }}
