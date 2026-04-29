@@ -1,8 +1,8 @@
 ---
 title: "Murat Oransoy"
-description: "Software engineer building things with Go and curiosity."
+description: "Production-minded notes on Go, backend systems, and Cloudflare."
 ---
 
-Hi, I'm **Murat** — a software engineer who likes shipping things.
+Hi, I am **Murat**. I turn what I learn about backend systems, Go, Linux, and Cloudflare into practical notes.
 
-This is where I write about what I'm learning, building, and breaking. New post every week.
+This site is less of a showcase and more of a workbench: sources I study, projects I build, mistakes I make, and fixes worth keeping.

@@ -1,7 +1,8 @@
 disabled = false
 locale = "en"
+languageCode = "en-US"
 label = "English"
-weight = 1
+weight = 2
 title = "Murat Oransoy"
 contentDir = "content/en"
 
@@ -10,19 +11,16 @@ contentDir = "content/en"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  description = "Personal blog and portfolio of Murat Oransoy — software engineer."
+  description = "Murat Oransoy's personal blog on Go, backend systems, and Cloudflare."
 
 [params.author]
   name = "Murat Oransoy"
   email = "muratoransoy838@gmail.com"
   image = "img/avatar.svg"
   imageQuality = 96
-  headline = "Software Engineer"
-  bio = "I build things with code. Mostly Go, sometimes everything else."
+  headline = "Backend developer | Go, Cloudflare, Linux"
+  bio = "Production-minded notes on Go, backend systems, and Cloudflare."
   links = [
     { email = "mailto:muratoransoy838@gmail.com" },
     { github = "https://github.com/muratoransoy" },
-    # TODO: fill in when accounts are confirmed
-    # { linkedin = "https://www.linkedin.com/in/USERNAME" },
-    # { x-twitter = "https://x.com/USERNAME" },
   ]

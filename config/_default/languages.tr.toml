@@ -2,7 +2,7 @@ disabled = false
 locale = "tr"
 languageCode = "tr-TR"
 label = "Türkçe"
-weight = 2
+weight = 1
 title = "Murat Oransoy"
 contentDir = "content/tr"
 
@@ -11,19 +11,16 @@ contentDir = "content/tr"
   isoCode = "tr"
   rtl = false
   dateFormat = "2 January 2006"
-  description = "Murat Oransoy'un kişisel blog ve portfolio sitesi — yazılım mühendisi."
+  description = "Murat Oransoy'un Go, backend sistemleri ve Cloudflare üzerine kişisel blogu."
 
 [params.author]
   name = "Murat Oransoy"
   email = "muratoransoy838@gmail.com"
   image = "img/avatar.svg"
   imageQuality = 96
-  headline = "Yazılım Mühendisi"
-  bio = "Kodla bir şeyler inşa ediyorum. Ağırlıklı Go, bazen de her şey."
+  headline = "Backend geliştirici | Go, Cloudflare, Linux"
+  bio = "Go, backend sistemleri ve Cloudflare üzerine üretime yakın notlar yazıyorum."
   links = [
     { email = "mailto:muratoransoy838@gmail.com" },
     { github = "https://github.com/muratoransoy" },
-    # TODO: hesaplar onaylanınca açılacak
-    # { linkedin = "https://www.linkedin.com/in/USERNAME" },
-    # { x-twitter = "https://x.com/USERNAME" },
   ]

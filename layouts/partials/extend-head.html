@@ -1,17 +1,16 @@
 {{/*
   Site-wide head injection. Auto-included by Blowfish if this file exists.
 
-  Cloudflare Web Analytics (free, cookie-less, no banner needed).
-
-  Setup:
-    1. Cloudflare dashboard → Web Analytics → Add a site.
+  Cloudflare Web Analytics setup:
+    1. Cloudflare dashboard -> Web Analytics -> Add a site.
     2. Copy the token from the snippet Cloudflare gives you.
-    3. Replace TODO_CF_BEACON_TOKEN below.
-    4. Or remove this script entirely if not using CF Analytics.
+    3. Add `cloudflareAnalyticsToken = "..."` to config/_default/params.toml.
 
-  Wrapped in `hugo.IsServer | not` so analytics never fires on local dev.
+  Analytics never fires on local dev and does not render with a placeholder token.
 */}}
-{{ if not hugo.IsServer }}
+{{ with site.Params.cloudflareAnalyticsToken }}
+{{ if and (not hugo.IsServer) (ne . "TODO_CF_BEACON_TOKEN") }}
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
-        data-cf-beacon='{"token": "TODO_CF_BEACON_TOKEN"}'></script>
+        data-cf-beacon='{"token": "{{ . }}"}'></script>
+{{ end }}
 {{ end }}

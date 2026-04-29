@@ -1,8 +1,8 @@
 ---
 title: "Murat Oransoy"
-description: "Go ile bir şeyler inşa eden bir yazılım mühendisi."
+description: "Go, backend sistemleri ve Cloudflare üzerine üretime yakın notlar."
 ---
 
-Merhaba, ben **Murat** — bir şeyler inşa etmeyi seven bir yazılım mühendisi.
+Merhaba, ben **Murat**. Backend sistemleri, Go, Linux ve Cloudflare üzerinde öğrendiklerimi kısa ama uygulanabilir notlara dönüştürüyorum.
 
-Burası öğrendiklerimi, geliştirdiklerimi ve denediklerimi yazdığım yer. Her hafta yeni bir yazı.
+Bu site bir vitrin olmaktan çok çalışma masası: okuduğum kaynaklar, kurduğum projeler, yaptığım hatalar ve işe yarayan çözümler burada birikiyor.

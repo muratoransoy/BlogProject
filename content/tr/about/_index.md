@@ -1,6 +1,6 @@
 ---
 title: "Hakkımda"
-description: "Kimim, neyle uğraşıyorum ve bana nasıl ulaşılır."
+description: "Kimim, neyle uğraşıyorum ve bu blogda ne bulacaksın."
 draft: false
 showReadingTime: false
 showDate: false
@@ -13,55 +13,36 @@ showBreadcrumbs: false
 sharingLinks: false
 ---
 
-Merhaba, ben **Murat Oransoy** — Türkiye'de yaşayan bir yazılım mühendisiyim.
+Merhaba, ben **Murat Oransoy**. Backend geliştirme, Go, Linux ve bulut tarafında daha iyi sistemler kurmaya çalışan bir yazılım geliştiricisiyim.
 
-Backend sistemleri, komut satırı araçları ve web üzerinde küçük ama işe yarar şeyler geliştirmeyi seviyorum. Hem işte hem hobi olarak Go yazıyorum; problem gerektirdiğinde başka her şeye de uzanıyorum.
+Benim için iyi yazılım sadece çalışan kod değil; okunabilir, izlenebilir, bakımı yapılabilir ve gerektiğinde sade kalabilen sistem demek. Bu blogu da tam bunun için tutuyorum: öğrendiklerimi dağıtmadan, cilalı ama gerçekçi notlara dönüştürmek.
 
----
+## Ne yazıyorum
 
-## Şu an üzerinde çalıştıklarım
-
-- Bu blogu inşa ediyorum ve haftalık olarak ilgimi çeken mühendislik konularını yazıyorum.
-- Go temellerimi keskinleştiriyor, dağıtık sistemleri keşfediyorum.
-- Açıkta öğreniyorum — güncel haller için [Şu An](/tr/now/) sayfasına bak.
+- Go ile backend geliştirme, servis tasarımı ve komut satırı araçları.
+- Cloudflare Workers, Pages, CDN, cache ve edge tarafındaki pratikler.
+- Hugo, GitHub Actions ve küçük ama işe yarayan geliştirici iş akışları.
+- Öğrenirken yaptığım hatalar, karar notları ve tekrar kullanmak istediğim çözümler.
 
 ## Nasıl çalışıyorum
 
-Önemsediklerim:
+- **Önce çalışan sistem**: Küçük başlarım, yayınlarım, ölçerim, sonra iyileştiririm.
+- **Az ama net teknoloji**: Gereksiz karmaşıklık yerine anlaşılır mimariyi tercih ederim.
+- **Kaynak kodla öğrenme**: Bir konuyu gerçekten anlamak için dokümantasyonun yanında çalışan örneğe bakarım.
 
-- **Yayına almak vs cilalamak** — bitmiş, mükemmelden iyidir; ama mükemmel ikinci geçişe değer.
-- **Kod yazmaktansa kod okumak** — mühendisliğin büyük kısmı zaten orada olanı anlamaktır.
-- **Sıkıcı teknoloji** — production için kanıtlanmış araçlar, parlak olanları yener.
+## Kullandığım teknolojiler
 
-## Birlikte çalıştığım teknolojiler
+**Diller:** Go, JavaScript / TypeScript, Python, Bash, SQL.
 
-**Diller**
-Go (birincil), JavaScript / TypeScript, Python, Bash, SQL.
+**Backend & altyapı:** PostgreSQL, Redis, Docker, Linux, REST, gRPC, Cloudflare.
 
-**Backend & Altyapı**
-PostgreSQL, Redis, Docker, Linux, gRPC, REST.
+**Web:** HTML, CSS, Hugo, biraz React.
 
-**Frontend (gerektiğinde)**
-HTML, CSS, biraz React.
-
-**Araçlar**
-VS Code, Git, GitHub Actions, Cloudflare, Hugo.
-
-> Tam liste [Kullandıklarım](/tr/uses/) sayfasında — günlük setup orada.
+**Araçlar:** VS Code, Git, GitHub Actions, Wrangler, terminal odaklı günlük akış.
 
 ## İletişim
 
-Bana ulaşmanın en hızlı yolları:
+- E-posta: [muratoransoy838@gmail.com](mailto:muratoransoy838@gmail.com)
+- GitHub: [@muratoransoy](https://github.com/muratoransoy)
 
-- E-posta — [muratoransoy838@gmail.com](mailto:muratoransoy838@gmail.com)
-- GitHub — [@muratoransoy](https://github.com/muratoransoy)
-
-Uzun konuşmalar ve iş teklifleri için e-posta en iyisi.
-
-## CV
-
-Yazdırılabilir CV yolda — şimdilik bu sayfa kanonik versiyondur.
-
-<!-- TODO: CV hazır olduğunda dosyayı static/cv.pdf altına koy ve bu bölümü indirme linkiyle değiştir:
-[CV İndir (PDF)](/cv.pdf)
--->
+Uzun konuşmalar, iş teklifleri veya teknik geri bildirim için e-posta en iyi kanal.

@@ -1,33 +1,34 @@
 ---
-title: "muratoransoy.dev (bu blog)"
+title: "BlogProject"
 date: 2026-04-22
 draft: false
-summary: "Şu an okuduğun site. Hugo + Blowfish, Cloudflare Pages'te yayında, iki dilde yazılıyor."
+summary: "Hugo, Blowfish ve Cloudflare Workers Static Assets ile yayınlanan iki dilli geliştirici blogu."
 tags: ["hugo", "go", "cloudflare", "açık-kaynak"]
 categories: ["web"]
-externalUrl: "https://github.com/muratoransoy/blog"
+externalUrl: "https://github.com/muratoransoy/BlogProject"
 showReadingTime: false
 showAuthor: false
 ---
 
-Şu an okuduğun sitenin kendisi.
+Bu site sadece bir blog değil; aynı zamanda kendi yayın altyapımı öğrendiğim ve iyileştirdiğim küçük bir ürün.
 
-## Neden geliştirdim
+## Ne çözüyor
 
-Öğrendiklerim için küçük, hızlı ve tamamen sahip olduğum bir ev istiyordum — CMS yok, reklam yok, kilitlenme yok. Bir CDN'den servis edilen statik dosyalar, versiyon kontrolünde Markdown, kontrolümde içerik.
+Teknik notlarımı sosyal medya akışında kaybetmek yerine bana ait, hızlı, arşivlenebilir ve kaynak koduyla takip edilebilir bir yerde topluyor.
 
 ## Stack
 
-- **Hugo Extended** statik site üretimi için.
-- **Blowfish** başlangıç teması — slate renk şeması ve birkaç CSS rötuşuyla.
-- **Cloudflare Pages** hosting için (ücretsiz tier, global CDN).
-- **GitHub Actions** build doğrulama ve kırık-link kontrolü için.
-- **giscus** yorumlar için (arka planda GitHub Discussions).
+- **Hugo Extended** ile statik site üretimi.
+- **Blowfish** üzerine özel ana sayfa ve proje CSS'i.
+- **Cloudflare Workers Static Assets** ile global dağıtım.
+- **GitHub Actions** ile build doğrulama.
+- **giscus** için hazır yorum entegrasyonu.
 
-## Ne öğrendim
+## Son iyileştirmeler
 
-- Hugo'nun i18n modeli ve dil başına `contentDir` ile URL'lerin nasıl temiz tutulduğu.
-- Cloudflare Pages build pipeline'ı ve `_headers` / `_redirects` dosyalarının değeri.
-- Haftalık yazmanın bir sprint değil, bir disiplin olduğu.
+- Türkçe varsayılan dil yapıldı.
+- Canlı Worker URL'i `baseURL` olarak ayarlandı.
+- Ana sayfa özel hero, konu şeridi ve son yazılar bölümüyle güçlendirildi.
+- Placeholder görünen sayfalar daha tamamlanmış içerikle yenilendi.
 
-Kaynak kod [GitHub](https://github.com/muratoransoy/blog)'da.
+Kaynak kod: [github.com/muratoransoy/BlogProject](https://github.com/muratoransoy/BlogProject)

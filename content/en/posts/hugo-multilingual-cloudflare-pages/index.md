@@ -106,4 +106,4 @@ A few things I'd change if I started over:
 
 Now that the site is up, the goal is one post a week — concrete, technical, and short enough to actually finish.
 
-The source for this blog is on [GitHub](https://github.com/muratoransoy/blog). If you spot something broken, open an issue.
+The source for this blog is on [GitHub](https://github.com/muratoransoy/BlogProject). If you spot something broken, open an issue.

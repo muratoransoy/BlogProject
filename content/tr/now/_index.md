@@ -1,6 +1,6 @@
 ---
 title: "Şu An"
-description: "Şu an üzerinde odaklandığım şeyler."
+description: "Şu dönemde odaklandığım işler, öğrendiğim konular ve yayın planı."
 draft: false
 showReadingTime: false
 showAuthor: false
@@ -12,27 +12,24 @@ showBreadcrumbs: false
 sharingLinks: false
 ---
 
-> Son güncelleme: **2026-04-22** — Türkiye'den
+> Son güncelleme: **2026-04-29** — Türkiye'den
 
 ## Üzerinde çalıştıklarım
 
-- Bu blogu inşa etmek: ilk versiyonu yayına almak, sonra açıkta iyileştirmek.
-- Her hafta yeni bir teknik yazı yazmak.
-- Go temellerimi keskinleştirmek — concurrency, deyimsel desenler, standart kütüphane.
+- Bu blogu daha ciddi bir geliştirici günlüğü ve portfolyo haline getirmek.
+- Go ile backend temellerini güçlendirmek: concurrency, standart kütüphane, test ve küçük servis tasarımı.
+- Cloudflare Workers ve Pages üzerinde hızlı, ucuz ve sürdürülebilir dağıtım akışları kurmak.
 
-## Öğrendiklerim
+## Öğrendiğim konular
 
-- **Dağıtık sistemler** — temellerden başlıyorum: tutarlılık, replikasyon, consensus.
-- **Cloudflare** stack'i — Pages, R2, Workers — ücretsiz tier'ı ne kadar zorlayabileceğimi görmek için.
+- Edge deployment: cache davranışı, header yönetimi, build çıktısı ve canonical URL temizliği.
+- Hugo ile çok dilli içerik: dil klasörleri, menüler, RSS ve sitemap düzeni.
+- Yazı disiplini: kısa notları saklamak yerine yayınlanabilir teknik yazılara dönüştürmek.
 
-## Okuduklarım
+## Yakındaki yazılar
 
-- _TODO: güncel kitap / makale_
+- Cloudflare Workers üzerinde statik site yayınlarken dikkat ettiğim ayarlar.
+- Go'da küçük CLI aracı yazarken proje yapısı.
+- Hugo blogunu “tema demosu” gibi göstermeden kişiselleştirmek.
 
-## Dinlediklerim / İzlediklerim
-
-- _TODO_
-
----
-
-Bu bir [Now sayfası](https://nownownow.com/about), Derek Sivers ruhuyla. Odağım değiştikçe değişir.
+Bu sayfa odağım değiştikçe güncellenir.
